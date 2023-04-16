@@ -74,7 +74,7 @@ header .profile-image {
   transition: all 0.5s;
 }
 header .profile-image:hover {
-  transform: scale(1.2) rotate(5deg);
+  transform: translateY(-10px);
 }
 
 .tag {
@@ -96,8 +96,9 @@ header .profile-image:hover {
   text-align: left;
   background: #fff;
   border-bottom: 4px solid #ccc;
-  border-radius: 6px;
+  border-radius: 10px;
   transition: all 0.5s;
+  flex: 1;
 }
 .card:hover {
   border-color: #ff99ff;
@@ -210,14 +211,32 @@ a.social:hover {
 }
 
 /* Extra styles */
-.profile-image.transform-img:hover {
-  transform: translateY(-10px);
-}
 
-.hobbies-container {
+.container {
   display: flex;
 }
 
-.hobbies-img {
+.container-img {
   width: 100%;
+  border-radius: 6px;
+  margin-top: 20px;
+}
+
+.skill-set {
+  list-style: none;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.skill-set li {
+  display: flex;
+  align-items: flex-end;
+  gap: 12px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
 }
